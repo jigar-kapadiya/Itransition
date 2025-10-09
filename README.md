@@ -38,3 +38,21 @@ Clone the repository and move into the project folder:
 
 ```bash
 git clone https://github.com/jigar-kapadiya/Itransition.git
+```
+
+## 🧩 Initialize the Project (first time setup)
+
+The following command installs dependencies, generates Prisma client,
+runs migrations, and seeds the database.
+
+```bash
+./init.sh
+```
+
+## ▶️ Run the Project
+
+After initialization, start both backend and frontend servers:
+
+```bash
+./start.sh
+```
