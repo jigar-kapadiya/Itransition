@@ -17,9 +17,9 @@ export class DrugsController implements IController {
     }
 
     async getAll(req: Request, res: Response) {
-        const company = typeof req.query.company === "string" ? req.query.company : undefined;
-        const limit = typeof req.query.limit === "string" ? Number(req.query.limit) : 10;
-        const page = typeof req.query.page === "string" ? Number(req.query.page) : 1;
+        const company = req.query.company?.toString();
+        const limit = Number(req.query.limit) || 10;
+        const page = Number(req.query.page) || 1;
         const result = await this.drugsService.getAll({ company, limit, page });
         res.json(result);
     }
