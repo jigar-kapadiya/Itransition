@@ -9,5 +9,5 @@
     "outDir": "dist",
     "strict": true
   },
-  "include": ["src", "prisma/**/*.ts"]
+  "include": ["src", "prisma/**/*.ts", "server.ts"]
 }
