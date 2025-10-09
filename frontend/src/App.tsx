@@ -1,5 +1,5 @@
 import './App.css'
-import DrugsPage from './components/drugsPage'
+import DrugsPage from './components/drugs-page'
 
 function App() {
 
