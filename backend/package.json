@@ -11,7 +11,7 @@
     "seed": "ts-node prisma/seed.ts"
   },
   "keywords": [],
-  "author": "",
+  "author": "JigarKapadiya",
   "license": "ISC",
   "type": "commonjs",
   "description": "",
