@@ -2,7 +2,7 @@ import prisma from "../db/prisma";
 import { Result } from "../types/result";
 
 type Drug = {
-    id: string;
+    id: number;
     code: string;
     name: string;
     company: string;
