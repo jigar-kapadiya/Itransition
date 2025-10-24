@@ -7,7 +7,7 @@ export const envVar = {
         password: env.REDIS_PASSWORD,
     },
     app: {
-        port: env.PORT || 3000,
+        port: env.PORT || 8000,
         secret: env.SECRET || "app-secret",
     }
 }
