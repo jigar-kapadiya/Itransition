@@ -10,7 +10,7 @@ export type SignUpResponse = { data: { userId: string } }
 export function useSignup() {
     return useMutation({
         mutationFn: (payload: { email: string, password: string }) => {
-            return axios.post('http://localhost:3000/users/signup', {
+            return axios.post(`${process.env.NEXT_PUBLIC_BASE_API_URL}/users/signup`, {
                 ...payload
             });
 
